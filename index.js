@@ -9,7 +9,7 @@ const { Telegraf, Markup } = require("telegraf");
 const mongoose = require("mongoose");
 
 const token = process.env.TELEGRAM_BOT_TOKEN;
-const mongodb = process.env.MONGODB_URL;
+const mongodb = process.env.MONGODB_URI;
 
 if (!token || !mongodb) {
   console.error("error");
@@ -17,7 +17,7 @@ if (!token || !mongodb) {
 }
 
 // mongodb connection
-mongoose.connect(mongodb).then(() => console.log("COnnected successfully to MongoDB Atlas")).catch(err => console.error("Database connection error", err));
+mongoose.connect(mongodb).then(() => console.log("Connected successfully to MongoDB Atlas")).catch(err => console.error("Database connection error", err));
 
 // data schema definition
 
