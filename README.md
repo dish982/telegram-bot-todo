@@ -46,6 +46,6 @@ This project is for educational and portfolio purposes only.
 
 ---
 
-## 👨Author
+## Author
 
 Made with ❤️ by **Disha**
